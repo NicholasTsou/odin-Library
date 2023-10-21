@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Odin Library</title>
+</head>
+<body>
+
+    <div class="main">
+        <header class="header">
+            <div class="title">
+                <p>My Book Library</p>
+            </div>
+        </header>
+        <section class="sectionOne">
+            <div class="top-section">
+                <button class="add" id="add">+ Add Book</button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <p>Add a Book</p>
+                        <form id="bookForm" class="bookForm">
+                            <div class="form name">
+                                <label for="bookName">Book Name:</label>
+                                <input type="text" id="bookName" required>
+                            </div>
+                            <div class="form author">
+                                <label for="author">Author:</label>
+                                <input type="text" id="author" required>
+                            </div>
+                            <div class="form pages">
+                                <label for="pages">Pages:</label>
+                                <input type="text" id="pages" required>
+                            </div>
+                            <div class="haveRead">
+                                <label for="read">Read:</label>
+                                <input type="radio" name="read" id="read">
+                                <label for="readYes">Yes</label>
+                                <input type="radio" name="read" id="read">
+                                <label for="readNo">No</label>
+                            </div>
+                            <div class="form submitBtn">
+                            <button type="submit" class="subBtn">Add</button>
+                            </div>
+                    
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            <div class="middle-section">
+                <div class="book-section" id="book-section">
+        
+            </div>
+
+        </div>
+        </section>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
