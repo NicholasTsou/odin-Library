@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+    font-family: 'Times New Roman', sans-serif;
+    color: white;
+}
+
+.main{
+    height: 100vh;
+    background-color: #243E36;;
+}
+header{
+    display: flex;
+}
+
+header .title{
+    margin: auto;
+    font-size: 3.4em;
+    font-weight: 900;
+    padding-top: 60px;
+}
+
+section .top-section{
+    display: flex;
+    padding-top: 40px;
+}
+
+section .top-section .add{
+    margin: auto;
+    font-size: 2.0em;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: #243E36 0.5s ease-in-out;
+    background-color: #243E36;
+}
+
+.top-section .add:hover{
+    background-color: #7CA982; 
+}
+
+button{
+    text-decoration: none;
+    text-align: center;
+    box-shadow: none;
+    /* outline: none; */
+    border: none;
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    width: 60%;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    background-color: #516159;
+}
+
+.modal-content .bookForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.modal-content p{
+    font-size: 2em;
+}
+
+
+.modal-content .bookForm .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .bookForm .form label, .haveRead{
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.modal-content .bookForm .form input, .haveRead{
+    height: 30px;
+    font-size: 1.4em;
+    
+}
+
+.modal-content .bookForm .form input{
+    border-radius: 10px;
+    background-color: #4d533f;
+    padding-left: 5px;
+}
+
+.modal-content .bookForm .haveRead{
+    display: flex;
+    gap: 15px;
+}
+
+.modal-content .bookForm .subBtn{
+    font-size: 1.6em;
+    background-color: #516159;
+    border: 2px solid rgb(51, 48, 48);
+    border-radius: 10px;
+    transition: #7CA982 0.5s ease-in-out;
+    
+}
+
+.modal-content .bookForm .subBtn:hover{
+    background-color: #7CA982; 
+}
+
+.book-section{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, 200px);
+    gap: 20px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.bookDetails{
+    display: grid;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #516159;
+}
+
+.bookDetails button{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #516159;
+    transition: #7CA982 0.5s ease-in-out;
+}
+
+
+.bookDetails p, .bookDetails button{
+    font-size: 1.4em;
+    padding: 15px; 
+}
+
+.bookDetails button:hover{
+    background-color: #7CA982; 
+}
