@@ -143,8 +143,8 @@ button{
 }
 
 .bookDetails button{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
     background-color: #516159;
     transition: #7CA982 0.5s ease-in-out;
 }
@@ -157,4 +157,9 @@ button{
 
 .bookDetails button:hover{
     background-color: #7CA982; 
+}
+
+.bookDetails #deleteBook{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
